@@ -42,9 +42,9 @@ try:
         numero = random.randint(1, 1000000000)
 
         html = "<html><body><h1>Hello World!</h1><p>And in particular hello to you, " + str(address[1])
-        html+= "</p>"
-        html +='<p><a href="http://localhost:1234/' + str(numero) + '">Dame otra</a></p>'
-        html+= "</body></html>"
+        html += "</p>"
+        html += '<p><a href="http://localhost:1234/' + str(numero) + '">Dame otra</a></p>'
+        html += "</body></html>"
 
         recvSocket.send("HTTP/1.1 200 OK\r\n\r\n" +
                         html +
